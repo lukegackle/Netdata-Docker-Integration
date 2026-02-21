@@ -1,0 +1,9 @@
+{
+    "name": "Netdata Docker",
+    "description": "Monitor Docker containers via the Netdata allmetrics API.",
+    "iot_class": "local_polling",
+    "render_readme": true,
+    "domains": [
+        "sensor"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "domain": "netdata_docker",
+    "name": "Netdata Docker",
+    "codeowners": [
+        "@[YOUR_GITHUB_USER]"
+    ],
+    "config_flow": true,
+    "documentation": "https://github.com/[YOUR_GITHUB_USER]/netdata_docker",
+    "integration_type": "hub",
+    "iot_class": "local_polling",
+    "requirements": [
+        "aiohttp"
+    ],
+    "version": "2.0.0"
+}

@@ -1,0 +1,19 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Connect to Netdata",
+                "description": "Enter the URL of your Netdata instance. The integration will automatically discover Docker containers.",
+                "data": {
+                    "url": "Netdata URL",
+                    "scan_interval": "Update interval (seconds)"
+                }
+            }
+        },
+        "error": {
+            "invalid_url": "URL must start with http:// or https://",
+            "cannot_connect": "Could not connect to Netdata. Check the URL and ensure Netdata is running.",
+            "no_data": "Connected but received no data. Check that Netdata has metrics available."
+        }
+    }
+}
