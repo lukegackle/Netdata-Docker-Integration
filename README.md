@@ -46,14 +46,7 @@ Monitor your Docker containers in Home Assistant using data from your Netdata in
 3. Enter your Netdata URL (e.g., `http://192.168.1.50:19999`).
 4. Select your preferred **Scan Interval** (default 30 seconds).
 
-## Testing
-
-The integration includes a standalone test suite that can be run without Home Assistant:
-```bash
-cd custom_components/netdata_docker
-python -m unittest tests.test_metrics_parser -v
-```
 
 ## Credits
 
-Based on the original Netdata allmetrics integration, re-architected for robust Docker container monitoring.
+Based on the original Netdata allmetrics integration, re-architected for robust Docker container monitoring in Homeassistant.
