@@ -83,8 +83,9 @@ class NetdataDockerSensor(CoordinatorEntity[NetdataDockerCoordinator], SensorEnt
         # Unique ID for config entry matching
         self._attr_unique_id = f"nd_docker_{safe_name}"
         
-        # Friendly name (will be the container name)
-        self._attr_name = container_name
+        # Set name to None so it perfectly inherits the Device name
+        # This prevents "Docker: name name" duplication in the UI
+        self._attr_name = None
         
         # Ensure the entity_id follows the requested pattern sensor.netdata_docker_<name>
         self.entity_id = f"sensor.netdata_docker_{safe_name}"
@@ -129,7 +130,10 @@ class NetdataDockerSensor(CoordinatorEntity[NetdataDockerCoordinator], SensorEnt
         if cm is None:
             return {}
 
-        attrs = {}
+        attrs = {
+            "Name": self.container_name,
+        }
+        
         # Basic ID
         if cm.container_id:
             attrs["container_id"] = cm.container_id
