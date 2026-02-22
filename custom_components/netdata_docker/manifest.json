@@ -2,10 +2,11 @@
     "domain": "netdata_docker",
     "name": "Netdata Docker",
     "codeowners": [
-        "@[YOUR_GITHUB_USER]"
+        "@lukegackle"
     ],
     "config_flow": true,
-    "documentation": "https://github.com/[YOUR_GITHUB_USER]/netdata_docker",
+    "documentation": "https://github.com/lukegackle/Netdata-Docker-Integration",
+    "issue_tracker": "https://github.com/lukegackle/Netdata-Docker-Integration/issues",    
     "integration_type": "hub",
     "iot_class": "local_polling",
     "requirements": [
