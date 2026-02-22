@@ -6,6 +6,8 @@ Monitor your Docker containers in Home Assistant using data from your Netdata in
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 ![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)
 
+![Homeassistant sensors screenshot](/sensor-screenshot.png)
+
 ## Features
 
 - **Auto-Discovery**: Automatically finds and monitors all Docker containers on your Netdata host.
