@@ -1,4 +1,4 @@
-![Netdata Docker Integration](/custom_components/netdata_docker/brands/icon.png)
+![Netdata Docker Integration](/custom_components/netdata_docker/brand/icon.png)
 
 # Netdata Docker for Home Assistant
 Monitor your Docker containers in Home Assistant using data from your Netdata instance. This integration uses the Netdata `/api/v1/allmetrics` API to provide real-time container status and performance metrics with ZERO manual configuration.
